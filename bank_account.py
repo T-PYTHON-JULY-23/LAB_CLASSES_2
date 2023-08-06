@@ -2,16 +2,6 @@ class BankAccount:
     def __init__(self,account_holder:str,initial_balance:float = 0) -> None:
         self.__account_holder = account_holder
         self.__initial_balance = initial_balance
-    # def set_account_holder(self, account_holder:str):
-    #     if isinstance(account_holder, str):
-    #         self.__account_holder = account_holder
-    #     else:
-    #         raise ValueError("please input valid name")
-    # def set_initial_balance(self, initial_balance:float):
-    #     if isinstance(initial_balance, float):
-    #         self.__initial_balance = initial_balance
-    #     else:
-    #         raise ValueError("please input valid balance")
     def get_account_holder(self):
         return self.__account_holder
     def get_initial_balance(self):
