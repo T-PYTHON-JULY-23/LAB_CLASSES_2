@@ -3,13 +3,13 @@ class BankAccount:
         self.account_holder = account_holder
         self.initial_balance = initial_balance
 
-    def deposit(self, amount):
-        self.initial_balance += amount
+    def deposit(self, blanc):
+        self.initial_balance += blanc
         return self.initial_balance
     
-    def withdraw(self, amount):
-        if amount <= self.initial_balance:
-            self.initial_balance -= amount
+    def withdraw(self, blanc):
+        if blanc <= self.initial_balance:
+            self.initial_balance -= blanc
         else:
             print("Insufficient funds. Withdrawal canceled.")
         return self.initial_balance
