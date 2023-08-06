@@ -109,14 +109,15 @@ class Truck(Vehicle):
 
         print(f"The {self.name} is carrying cargo !!")
 
-
+print("_"*30)
 truck = Truck("Toyota","A3","blue",4,"123ASD")
 truck.carry_cargo()
 truck.drift()
 truck.drive()
 
+print("_"*30)
 bus = Bus("ford","SS","red",15,"456yYHN")
 
-Bus.carry_cargo()
-Bus.drift()
-Bus.drive()
+bus.carry_cargo()
+bus.drift()
+bus.drive()
