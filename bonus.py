@@ -32,54 +32,52 @@
 
 class Vehicle:
     def __init__(self, brand, name, color, capacity, plate_number):
-        self._brand = brand
-        self._name = name
-        self._color = color
-        self._capacity = capacity
-        self._plate_number = plate_number
+        self.__brand = brand
+        self.__name = name
+        self.__color = color
+        self.__capacity = capacity
+        self.__plate_number = plate_number
 
     def drive(self):
-        print(f"The {self._name} - {self._brand}is driving!")
+        print(f"The {self.__name} - {self.__brand} is driving!")
 
     def drift(self):
-        print(f"The {self._name} -  {self._brand} is drifting!")
+        print(f"The {self.__name} - {self.__brand} is drifting!")
 
     def carry_cargo(self):
-        print(f"The {self._name} - {self._brand} is carrying cargo!")
-
+        print(f"The {self.__name} - {self.__brand} is carrying cargo!")
 
     # Getters
     def get_brand(self):
-        return self._brand
+        return self.__brand
 
     def get_name(self):
-        return self._name
+        return self.__name
 
     def get_color(self):
-        return self._color
+        return self.__color
 
     def get_capacity(self):
-        return self._capacity
+        return self.__capacity
 
     def get_plate_number(self):
-        return self._plate_number
-
+        return self.__plate_number
 
     # Setters
     def set_brand(self, brand):
-        self._brand = brand
+        self.__brand = brand
 
     def set_name(self, name):
-        self._name = name
+        self.__name = name
 
     def set_color(self, color):
-        self._color = color
+        self.__color = color
 
     def set_capacity(self, capacity):
-        self._capacity = capacity
+        self.__capacity = capacity
 
     def set_plate_number(self, plate_number):
-        self._plate_number = plate_number
+        self.__plate_number = plate_number
 
 
 class Bus(Vehicle):
@@ -87,7 +85,7 @@ class Bus(Vehicle):
         super().__init__(brand, name, color, capacity, plate_number)
 
     def drift(self):
-        print(f"The {self._name} is not suitable for drifting.")
+        print(f"The {self.get_name()} is not suitable for drifting.")
 
 
 class Truck(Vehicle):
@@ -95,7 +93,7 @@ class Truck(Vehicle):
         super().__init__(brand, name, color, capacity, plate_number)
 
     def carry_cargo(self):
-        print(f"The {self._name} is carrying heavy cargo!")
+        print(f"The {self.get_name()} is carrying heavy cargo!")
 
 
 # Create objects of each class
@@ -107,11 +105,11 @@ truck = Truck("Volvo", "Truck1", "Yellow", 10000, "GHI789")
 car.drive()
 car.drift()
 car.carry_cargo()
-print("==="*6)
+print("===" * 6)
 bus.drive()
 bus.drift()
 bus.carry_cargo()
-print("==="*6)
+print("===" * 6)
 truck.drive()
 truck.drift()
 truck.carry_cargo()
