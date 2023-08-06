@@ -1,19 +1,19 @@
 class BankAccount:
 
     def __init__(self, account_holder:str , initial_balance:float)->None:
-        self.account_holder = account_holder 
-        self.initial_balance = initial_balance
+        self.__account_holder = account_holder 
+        self.__initial_balance = initial_balance
 
     def deposit(self, amount:float):
-       balance:float = self.initial_balance + amount
-       self.initial_balance= balance
+       balance:float = self.__initial_balance + amount
+       self.__initial_balance= balance
        return balance
        
     def withdraw(self, amount:float):
          
-         if self.initial_balance > amount:
-          balance:float = self.initial_balance - amount
-          self.initial_balance= balance
+         if self.__initial_balance > amount:
+          balance:float = self.__initial_balance - amount
+          self.__initial_balance= balance
           return balance
 
          else:
@@ -21,10 +21,10 @@ class BankAccount:
              
 
     def get_balance(self):
-        return self.initial_balance 
+        return self.__initial_balance 
 
     def get_account_holder(self):
-         return self.account_holder
+         return self.__account_holder
 
 
 account1= BankAccount("Sarah",28375)
@@ -41,5 +41,5 @@ print(account2.withdraw(700))
 print(account2.get_balance())
 
 
-print(f"Account holder: {account1.account_holder}, Balance: {account1.get_balance()}")
-print(f"Account holder: {account2.account_holder}, Balance: {account2.get_balance()}")
+print(f"Account holder: {account1.get_account_holder}, Balance: {account1.get_balance()}")
+print(f"Account holder: {account2.get_account_holder}, Balance: {account2.get_balance()}")
