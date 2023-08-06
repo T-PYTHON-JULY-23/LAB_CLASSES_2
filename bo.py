@@ -12,8 +12,10 @@ class Vehicle ():
     # def carry_cargo():
     #     pass
 class Bus(Vehicle):
-    def __init__(self,brand:str,name:str,color:str,capacity:int,plate_number:int) -> None:
+    def __init__(self,brand:str,name:str,color:str,capacity:int,plate_number:int,year:int) -> None:
         super().__init__(brand, name, color, capacity, plate_number)
+        self.year = year
+
     def drive(self):
         print(f"The {self.name} id driving !")
     def drift(self):
@@ -28,8 +30,9 @@ bus1.drift()
 bus1.carry_cargo()
 print()
 class Truck(Vehicle):
-    def __init__(self,brand:str,name:str,color:str,capacity:int,plate_number:int) -> None:
+    def __init__(self,brand:str,name:str,color:str,capacity:int,plate_number:int, fuel_type:str) -> None:
         super().__init__(brand, name, color, capacity, plate_number)
+        self.fuel_type = fuel_type
     def drive(self):
         print(f"The {self.name} id driving !")
     def drift(self):
