@@ -53,6 +53,11 @@ class Bus(Vehicle):
 
     def __init__(self, brand, name, color, capacity, plate_number) -> None:
         super().__init__(brand, name, color, capacity, plate_number)
+        self.__name=name
+
+    def drift(self):
+        print(f"the {self.__name} is drifting !!")
+
 
 
 
@@ -60,6 +65,10 @@ class Truck(Vehicle):
     
     def __init__(self, brand, name, color, capacity, plate_number) -> None:
         super().__init__(brand, name, color, capacity, plate_number)
+        self.__name = name
+
+    def carry_cargo(self):
+         print (f"the {self.__name} is carrying cargo !!")
 
  
 
