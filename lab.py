@@ -21,3 +21,12 @@ class BankAccount:
     def get_account_holder(self):
         return self.account_holder
     
+    account1= ("Nada",400)
+    
+    print(account1.withdraw(800))
+    print(account1.get_balance())
+    print(account1.deposit())
+    print(account1.get_account_holder())
+    print(account1.get_balance())
+    
+    
