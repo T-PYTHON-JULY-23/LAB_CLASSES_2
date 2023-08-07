@@ -2,8 +2,9 @@ class BankAccount :
     def __init__(self,account_holder,initial_balance=0) -> None:
         self.__account_holder=account_holder
         self.__initial_balance=initial_balance
-       
+      
     def deposit(self,amount):
+       
         new_balance= self.__initial_balance=+amount
 
         return new_balance
