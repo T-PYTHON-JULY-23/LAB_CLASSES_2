@@ -20,7 +20,4 @@ class BankAccount:
 
     def get_account_holder(self):
         return self.account_holder
-   
-
-    
     
