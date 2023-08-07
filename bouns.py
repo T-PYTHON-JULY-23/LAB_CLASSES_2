@@ -37,15 +37,15 @@ class Vehicle :
         return self.__plate_number
 class Bus(Vehicle):
   def drift(self):
-      return f"the {self.name} is not drifting!"
+      return f"the {self.get_name()} is not drifting!"
   def carry_cargo(self) :
-        return f"the {self.name} is not carrying cargo!"
+        return f"the {self.get_name()} is not carrying cargo!"
   
 class Truck(Vehicle):
   def drift(self):
-      return f"the {self.name} is not drifting!"
+      return f"the {self.get_name()} is not drifting!"
   def carry_cargo(self) :
-        return f"the {self.name} carrying cargo!"
+        return f"the {self.get_name()} carrying cargo!"
 
 car1=Vehicle("mercedes","G-class","Black",96,"H R B")
 car2=Bus("mercedes","Benz Buses","white",530,"H J J")
