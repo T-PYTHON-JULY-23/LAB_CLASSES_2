@@ -41,5 +41,5 @@ print(account2.withdraw(700))
 print(account2.get_balance())
 
 
-print(f"Account holder: {account1.get_account_holder}, Balance: {account1.get_balance()}")
-print(f"Account holder: {account2.get_account_holder}, Balance: {account2.get_balance()}")
+print(f"Account holder: {account1.get_account_holder()}, Balance: {account1.get_balance()}")
+print(f"Account holder: {account2.get_account_holder()}, Balance: {account2.get_balance()}")
