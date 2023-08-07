@@ -75,12 +75,13 @@ Vehicle1.drive()
 Vehicle1.drift()
 Vehicle1.carry_cargo()
 
-
+print()
 
 bus.drive()
 bus.drift()
 bus.carry_cargo()
 
+print()
 
 truck.drive()
 truck.drift()
